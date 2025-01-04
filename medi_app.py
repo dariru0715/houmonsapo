@@ -64,7 +64,7 @@ else: # contentsが空でない場合＝音声が入力された場合の表示�
         audio_file= open("./audio.wav", "rb")
 
     # wisperで音声データをテキストに変換。transcriptionに代入。wisperモデルはwhisper-1を使用
-    transcription = openai.Audio.transcribe(
+    transcription = openai.audio.transcribe(
     model="whisper-1", 
     file=audio_file,
     )
