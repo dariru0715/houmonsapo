@@ -68,7 +68,7 @@ else: # contentsが空でない場合＝音声が入力された場合の表示�
     model="whisper-1", 
     file=audio_file,
     )
-    recognized_text = transcription.text
+    recognized_text = transcription['text']
         
     st.write(recognized_text) # テキストを表示
 
