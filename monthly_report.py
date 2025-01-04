@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import openai
 import os
 import datetime
 import pandas as pd

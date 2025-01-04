@@ -1,5 +1,6 @@
 import streamlit as st # フロントエンドを扱うstreamlitをインポート
 from openai import OpenAI # 音声認識で利用するOpenAIをインポート
+import openai
 import os # 環境変数にしたopenai apiキーを呼び出すための機能をインポート
 import wave # WAV形式のオーディオファイルを動かすための機能をインポート
 import time
