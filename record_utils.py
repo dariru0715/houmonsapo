@@ -3,7 +3,7 @@ import os # 環境変数にしたopenai apiキーを呼び出すための機能�
 import speech_recognition as sr # 音声認識の機能をインポート
 from audio_recorder_streamlit import audio_recorder # streamlit内でオーディオを録音するための機能をインポート
 import datetime
-
+import streamlit as st
 
 
 # streamlitで音声を録音するための関数を設定
