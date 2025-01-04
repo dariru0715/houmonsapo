@@ -10,7 +10,7 @@ from record_utils import recorder, file_speech_to_text, summarize_text
 
 # whisper利用のためのコード
 openai.api_key = st.secrets["OPENAI_API_KEY"] # 環境変数化したAPIキーの読み込み
-client = OpenAI() # openAIの機能をclientに代入
+client = openai # openAIの機能をclientに代入
 
 # streamlitでフロントエンド側を作成
 st.title('ホカンサポ／訪問記録作成用') # タイトルを表示

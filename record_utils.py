@@ -29,7 +29,7 @@ def file_speech_to_text(audio_file):
 
 # 音声認識した内容を要約する機能の設定
 openai.api_key = st.secrets["OPENAI_API_KEY"] # 環境変数化したAPIキーの読み込み
-client = OpenAI() # openAIの機能をclientに代入
+client = openai # openAIの機能をclientに代入
 
 # chatGPTにリクエストするための関数を設定。引数には書いてほしい内容と最大文字数を指定
 def summarize_text(input_text, set_customer, content_maxStr_to_gpt):

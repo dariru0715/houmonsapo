@@ -10,7 +10,7 @@ from customer_list import SET_CUSTOMER_LIST
 openai.api_key = st.secrets["OPENAI_API_KEY"]  # 環境変数化したAPIキーの読み込み
 
 # OpenAIクライアントの初期化
-client = OpenAI()
+client = openai
 
 # 今日の日付
 today = datetime.date.today()
