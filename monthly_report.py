@@ -6,7 +6,7 @@ import pandas as pd
 from customer_list import SET_CUSTOMER_LIST
 
 # OpenAI APIキーの設定
-OpenAI.api_key = os.environ['OPENAI_API_KEY']  # 環境変数化したAPIキーの読み込み
+openai.api_key = st.secrets["OPENAI_API_KEY"]  # 環境変数化したAPIキーの読み込み
 
 # OpenAIクライアントの初期化
 client = OpenAI()
